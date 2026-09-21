@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>墨西哥西班牙文學習筆記 - 第3課</title>
+<style>
+  @page { size: A4; margin: 2cm; }
+  :root { --mex-green: #006341; --mex-red: #CE1126; --mex-gold: #F4B400; --dark: #2D2D2D; --light-bg: #FFF8F0; --tip-bg: #F0F8F5; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Helvetica Neue', Helvetica, Arial, 'Microsoft JhengHei', sans-serif; color: var(--dark); line-height: 1.7; font-size: 10.5pt; background: #fff; }
+  .page { page-break-after: always; }
+  .page:last-child { page-break-after: auto; }
+  @media screen { .page { padding: 0 1cm; } }
+  @media print  { .page { padding: 0; } }
+  .cover { text-align: center; padding-top: 3cm; }
+  .cover h1 { font-size: 32pt; color: var(--mex-green); margin-bottom: 0.3cm; font-weight: 800; letter-spacing: 1px; }
+  .cover .subtitle { font-size: 16pt; color: var(--dark); margin-bottom: 0.8cm; font-weight: 400; }
+  .cover .tricolor { width: 100%; height: 8px; background: linear-gradient(to right, var(--mex-green) 33%, #fff 33%, #fff 66%, var(--mex-red) 66%); border: 1px solid #ccc; margin-bottom: 1.5cm; }
+  .cover .lesson-title { font-size: 20pt; font-weight: 600; margin-bottom: 0.3cm; }
+  .cover .lesson-sub { font-size: 13pt; color: #555; margin-bottom: 3cm; }
+  .cover hr { width: 50%; margin: 1cm auto; border: none; border-top: 2px solid var(--mex-green); }
+  h1 { font-size: 20pt; color: var(--mex-red); margin: 1cm 0 0.4cm 0; font-weight: 700; border-bottom: 3px solid var(--mex-green); padding-bottom: 4px; }
+  h2 { font-size: 14pt; color: var(--mex-green); margin: 0.8cm 0 0.3cm 0; font-weight: 700; }
+  h3 { font-size: 12pt; color: var(--dark); margin: 0.5cm 0 0.2cm 0; font-weight: 700; }
+  p { margin: 0.15cm 0; }
+  table { width: 100%; border-collapse: collapse; margin: 0.4cm 0; font-size: 10pt; }
+  th { background: var(--mex-green); color: #fff; padding: 6px 8px; text-align: center; font-weight: 700; border: 1px solid #ccc; }
+  td { padding: 5px 8px; border: 1px solid #ccc; text-align: center; }
+  tr:nth-child(even) { background: var(--light-bg); }
+  .es { color: var(--mex-green); font-weight: 700; font-size: 11.5pt; }
+  .es-gray { color: #888; font-weight: 600; }
+  .tip { background: var(--tip-bg); border: 1px solid var(--mex-green); padding: 10px 14px; margin: 0.4cm 0; font-size: 10pt; font-style: italic; border-radius: 4px; }
+  .hint { background: #FFF3E0; border-left: 4px solid var(--mex-gold); padding: 10px 14px; margin: 0.4cm 0; font-size: 10pt; }
+  .warn { background: #FFEBEE; border-left: 4px solid var(--mex-red); padding: 10px 14px; margin: 0.4cm 0; font-size: 10pt; }
+  .slang-row td:nth-child(3) { font-weight: 700; white-space: nowrap; }
+  .slang-row .f-muyf { color: #1a237e; }
+  .slang-row .f-form { color: #0d47a1; }
+  .slang-row .f-neut { color: #2e7d32; }
+  .slang-row .f-colo { color: #ef6c00; }
+  .slang-row .f-slan { color: #c62828; }
+  .slang-row .f-gros { color: #880e4f; font-weight: 800; }
+  .dialogue { background: var(--light-bg); border-left: 4px solid var(--mex-green); padding: 12px 16px; margin: 0.5cm 0; font-size: 10.5pt; }
+  .dialogue .sp { font-weight: 700; color: var(--dark); }
+  .cn { color: #666; font-size: 9.5pt; }
+  .exercise { background: #FAFAFA; border: 1px dashed #999; padding: 12px 16px; margin: 0.4cm 0; }
+  .exercise .q { font-weight: 700; margin: 8px 0 4px 0; }
+  .blank { border-bottom: 1px solid #333; display: inline-block; min-width: 6cm; }
+  .answer-block { display: none; }
+  .next-lesson { text-align: center; margin-top: 1.5cm; padding-top: 0.8cm; border-top: 3px solid var(--mex-red); }
+  .next-lesson .label { font-size: 16pt; color: var(--mex-red); font-weight: 700; }
+  .grammar-box { background: linear-gradient(135deg, #f5f5f5, #fff); border: 2px solid var(--mex-gold); border-radius: 8px; padding: 14px; margin: 0.5cm 0; }
+  .grammar-box h3 { color: var(--mex-red); margin-top: 0; }
+  ul { margin: 0.3cm 0 0.3cm 1.2cm; }
+</style>
+</head>
+<body>
+
+<!-- ==================== COVER ==================== -->
+<div class="page cover">
+  <h1>🌮 墨西哥西班牙文學習筆記</h1>
+  <div class="subtitle">Español Mexicano para Principiantes</div>
+  <div class="tricolor"></div>
+  <div class="lesson-title">第 3 課：國籍、職業與家庭</div>
+  <div class="lesson-sub">Lección 3: Nacionalidad, Profesión y Familia</div>
+  <hr>
+  <div style="font-size: 11pt; color: #666; line-height: 2;">
+    學習者：Nelson（劉奎一）<br>
+    日期：2026年9月21日<br>
+    編排：Orion Cowork AI 助教
+  </div>
+</div>
+
+<!-- ==================== PAGE 2 ==================== -->
+<div class="page">
+  <h1>🌍 第一步：國家與國籍</h1>
+  <p>在墨西哥介紹自己時，說明「你從哪裡來」是最自然的第一步。國籍名詞有<span class="es">陽性</span>和<span class="es">陰性</span>之分——通常陰性加 <span class="es">-a</span>（但也有些例外）。</p>
+
+  <h2>主要國家與國籍</h2>
+  <table>
+    <tr><th>國家</th><th>陽性國籍</th><th>陰性國籍</th><th>國名（西班牙文）</th></tr>
+    <tr><td>墨西哥</td><td><span class="es">mexicano</span></td><td><span class="es">mexicana</span></td><td><span class="es">México</span></td></tr>
+    <tr><td>中華民國（台灣）</td><td><span class="es">taiwanés</span></td><td><span class="es">taiwanesa</span></td><td><span class="es">Taiwán</span></td></tr>
+    <tr><td>中國</td><td><span class="es">chino</span></td><td><span class="es">china</span></td><td><span class="es">China</span></td></tr>
+    <tr><td>日本</td><td><span class="es">japonés</span></td><td><span class="es">japonesa</span></td><td><span class="es">Japón</span></td></tr>
+    <tr><td>韓國</td><td><span class="es">coreano</span></td><td><span class="es">coreana</span></td><td><span class="es">Corea del Sur</span></td></tr>
+    <tr><td>美國</td><td><span class="es">estadounidense</span></td><td><span class="es">estadounidense</span></td><td><span class="es">Estados Unidos</span></td></tr>
+    <tr><td>加拿大</td><td><span class="es">canadiense</span></td><td><span class="es">canadiense</span></td><td><span class="es">Canadá</span></td></tr>
+    <tr><td>英國</td><td><span class="es">británico</span></td><td><span class="es">británica</span></td><td><span class="es">Reino Unido</span></td></tr>
+    <tr><td>西班牙</td><td><span class="es">español</span></td><td><span class="es">española</span></td><td><span class="es">España</span></td></tr>
+    <tr><td>法國</td><td><span class="es">francés</span></td><td><span class="es">francesa</span></td><td><span class="es">Francia</span></td></tr>
+    <tr><td>德國</td><td><span class="es">alemán</span></td><td><span class="es">alemana</span></td><td><span class="es">Alemania</span></td></tr>
+    <tr><td>印度</td><td><span class="es">indio</span></td><td><span class="es">india</span></td><td><span class="es">India</span></td></tr>
+    <tr><td>巴西</td><td><span class="es">brasileño</span></td><td><span class="es">brasileña</span></td><td><span class="es">Brasil</span></td></tr>
+  </table>
+
+  <div class="tip">
+    💡 <b>記憶訣竅</b>：<br>
+    • 以 <span class="es">-o</span> 結尾通常是陽性（mexicano, chino），以 <span class="es">-a</span> 結尾通常是陰性（mexicana, china）。<br>
+    • 以 <span class="es">-ense</span> 結尾的國籍（estadounidense, canadiense）<b>不分陰陽</b>，兩性同形。<br>
+    • 有些國籍需要加重音符號（taiwan<b>é</b>s, japon<b>é</b>s, franc<b>é</b>s），陰性時重音符號會消失（taiwanes<b>a</b>）。
+  </div>
+
+  <h2>國籍句型</h2>
+  <table>
+    <tr><th>情境</th><th>西班牙文</th><th>中文</th><th>正式度</th></tr>
+    <tr><td>我是台灣人（男）</td><td><span class="es">Soy taiwanés.</span></td><td>我是台灣人。</td><td class="f-neut">Neutral</td></tr>
+    <tr><td>我是台灣人（女）</td><td><span class="es">Soy taiwanesa.</span></td><td>我是台灣人。</td><td class="f-neut">Neutral</td></tr>
+    <tr><td>我來自台灣</td><td><span class="es">Soy de Taiwán.</span></td><td>我來自台灣。</td><td class="f-colo">Coloquial</td></tr>
+    <tr><td>你從哪裡來？</td><td><span class="es">¿De dónde eres?</span></td><td>你從哪裡來？</td><td class="f-neut">Neutral</td></tr>
+    <tr><td>（正式）您來自哪裡？</td><td><span class="es">¿De dónde es usted?</span></td><td>您來自哪裡？</td><td class="f-form">Formal</td></tr>
+    <tr><td>你住在墨西哥嗎？</td><td><span class="es">¿Vives en México?</span></td><td>你住在墨西哥嗎？</td><td class="f-neut">Neutral</td></tr>
+  </table>
+</div>
+
+<!-- ==================== PAGE 3 ==================== -->
+<div class="page">
+  <h1>💼 第二步：職業</h1>
+  <p>在墨西哥，「你做什麼工作？」是聊天中最常問的問題之一。學會描述職業和國籍，就能完整介紹自己了！</p>
+
+  <h2>常見職業詞彙</h2>
+  <table>
+    <tr><th>職業</th><th>陽性</th><th>陰性</th><th>說明</th></tr>
+    <tr><td>工程師</td><td><span class="es">ingeniero</span></td><td><span class="es">ingeniera</span></td><td>IT、機械等皆同</td></tr>
+    <tr><td>老師</td><td><span class="es">maestro</span></td><td><span class="es">maestra</span></td><td>也稱 profesor(a)</td></tr>
+    <tr><td>醫生</td><td><span class="es">médico</span></td><td><span class="es">médica</span></td><td>口語常稱 doctor(a)</td></tr>
+    <tr><td>護士</td><td><span class="es">enfermero</span></td><td><span class="es">enfermera</span></td><td>—</td></tr>
+    <tr><td>學生</td><td><span class="es">estudiante</span></td><td><span class="es">estudiante</span></td><td>不分陰陽</td></tr>
+    <tr><td>主管／經理</td><td><span class="es">gerente</span></td><td><span class="es">gerenta/gerente</span></td><td>墨西哥多用 gerente</td></tr>
+    <tr><td>業務／銷售</td><td><span class="es">vendedor</span></td><td><span class="es">vendedora</span></td><td>—</td></tr>
+    <tr><td>會計</td><td><span class="es">contador</span></td><td><span class="es">contadora</span></td><td>—</td></tr>
+    <tr><td>律師</td><td><span class="es">abogado</span></td><td><span class="es">abogada</span></td><td>—</td></tr>
+    <tr><td>廚師</td><td><span class="es">cocinero</span></td><td><span class="es">cocinera</span></td><td>—</td></tr>
+    <tr><td>司機</td><td><span class="es">chofer</span></td><td><span class="es">chofer</span></td><td>不分陰陽</td></tr>
+    <tr><td>警察</td><td><span class="es">policía</span></td><td><span class="es">policía</span></td><td>不分陰陽</td></tr>
+  </table>
+
+  <h2>職業句型</h2>
+  <table>
+    <tr><th>情境</th><th>西班牙文</th><th>正式度</th></tr>
+    <tr><td>我是工程師</td><td><span class="es">Soy ingeniero.</span></td><td class="f-neut">Neutral</td></tr>
+    <tr><td>你做什麼工作？</td><td><span class="es">¿A qué te dedicas?</span></td><td class="f-colo">Coloquial</td></tr>
+    <tr><td>（正式）您從事什麼職業？</td><td><span class="es">¿En qué trabaja usted?</span></td><td class="f-form">Formal</td></tr>
+    <tr><td>我在一家科技公司工作</td><td><span class="es">Trabajo en una empresa de tecnología.</span></td><td class="f-neut">Neutral</td></tr>
+    <tr><td>我的工作內容是...</td><td><span class="es">Mi trabajo consiste en...</span></td><td class="f-neut">Neutral</td></tr>
+  </table>
+
+  <div class="hint">
+    🎯 <b>職業 + 國籍一起說</b>：<br>
+    <span class="es">Soy ingeniero taiwanés.</span> → 我是台灣工程師。<br>
+    <span class="es">Soy maestra mexicana.</span> → 我是墨西哥老師。
+  </div>
+
+  <h2>公司與產業詞彙</h2>
+  <table>
+    <tr><th>中文</th><th>西班牙文</th></tr>
+    <tr><td>公司</td><td><span class="es">empresa / compañía</span></td></tr>
+    <tr><td>工廠</td><td><span class="es">fábrica</span></td></tr>
+    <tr><td>辦公室</td><td><span class="es">oficina</span></td></tr>
+    <tr><td>科技</td><td><span class="es">tecnología</span></td></tr>
+    <tr><td>製造業</td><td><span class="es">manufactura</span></td></tr>
+    <tr><td>財務／金融</td><td><span class="es">finanzas</span></td></tr>
+    <tr><td>教育</td><td><span class="es">educación</span></td></tr>
+    <tr><td>醫療</td><td><span class="es">salud / medicina</span></td></tr>
+  </table>
+</div>
+
+<!-- ==================== PAGE 4 ==================== -->
+<div class="page">
+  <h1>👨‍👩‍👧‍👦 第三步：家庭成員</h1>
+  <p>想跟墨西哥人聊得深入，「家人」是絕佳話題！墨西哥文化非常重視家庭，問起家人來總是有說不完的話。</p>
+
+  <h2>家庭成員詞彙</h2>
+  <table>
+    <tr><th>關係</th><th>西班牙文</th><th>複數（家人們）</th><th>例句</th></tr>
+    <tr><td>父親</td><td><span class="es">padre</span> / <span class="es">papá</span></td><td><span class="es">padres</span></td><td>Mi padre es médico.</td></tr>
+    <tr><td>母親</td><td><span class="es">madre</span> / <span class="es">mamá</span></td><td><span class="es">madres</span>（少用）</td><td>Mi mamá es maestra.</td></tr>
+    <tr><td>父母（合稱）</td><td><span class="es">los padres</span></td><td>—</td><td>Mis padres viven en Taiwán.</td></tr>
+    <tr><td>兄弟</td><td><span class="es">hermano</span></td><td><span class="es">hermanos</span></td><td>Tengo un hermano.</td></tr>
+    <tr><td>姐妹</td><td><span class="es">hermana</span></td><td><span class="es">hermanas</span></td><td>Tengo dos hermanas.</td></tr>
+    <tr><td>兒子</td><td><span class="es">hijo</span></td><td><span class="es">hijos</span></td><td>Mi hijo tiene cinco años.</td></tr>
+    <tr><td>女兒</td><td><span class="es">hija</span></td><td><span class="es">hijas</span></td><td>Mi hija es estudiante.</td></tr>
+    <tr><td>丈夫</td><td><span class="es">esposo</span> / <span class="es">marido</span></td><td>—</td><td>Mi esposo trabaja en México.</td></tr>
+    <tr><td>妻子</td><td><span class="es">esposa</span> / <span class="es">mujer</span>（口語）</td><td>—</td><td>Mi esposa es contadora.</td></tr>
+    <tr><td>祖父</td><td><span class="es">abuelo</span></td><td><span class="es">abuelos</span></td><td>Mi abuelo tiene ochenta años.</td></tr>
+    <tr><td>祖母</td><td><span class="es">abuela</span></td><td>—</td><td>Mi abuela cocina muy rico.</td></tr>
+    <tr><td>叔／伯／舅</td><td><span class="es">tío</span></td><td><span class="es">tíos</span></td><td>Mi tío vive en Guadalajara.</td></tr>
+    <tr><td>姨／姑／舅媽</td><td><span class="es">tía</span></td><td>—</td><td>Mi tía es enfermera.</td></tr>
+    <tr><td>堂／表兄弟姐妹</td><td><span class="es">primo</span> / <span class="es">prima</span></td><td><span class="es">primos</span></td><td>Mis primos son mexicanos.</td></tr>
+    <tr><td>姪子／外甥</td><td><span class="es">sobrino</span></td><td><span class="es">sobrinos</span></td><td>—</td></tr>
+    <tr><td>姪女／外甥女</td><td><span class="es">sobrina</span></td><td><span class="es">sobrinas</span></td><td>—</td></tr>
+  </table>
+
+  <div class="tip">
+    💡 <b>墨西哥特色</b>：<br>
+    • <span class="es">papá / mamá</span> 比 <span class="es">padre / madre</span> 更常用於口語。<br>
+    • 墨西哥人常把朋友的父母也叫 <span class="es">tío / tía</span>，表示親暱（不只是真的親戚）。
+  </div>
+
+  <h2>家庭句型</h2>
+  <table>
+    <tr><th>情境</th><th>西班牙文</th><th>中文</th></tr>
+    <tr><td>我有...（家人）</td><td><span class="es">Tengo...</span></td><td>我有...</td></tr>
+    <tr><td>我沒有兄弟</td><td><span class="es">No tengo hermanos.</span></td><td>我沒有兄弟。</td></tr>
+    <tr><td>我家有四口人</td><td><span class="es">Somos cuatro en mi familia.</span></td><td>我家有四口人。</td></tr>
+    <tr><td>我結婚了</td><td><span class="es">Estoy casado/a.</span></td><td>我結婚了。</td></tr>
+    <tr><td>我單身</td><td><span class="es">Estoy soltero/a.</span></td><td>我單身。</td></tr>
+    <tr><td>你有小孩嗎？</td><td><span class="es">¿Tienes hijos?</span></td><td>你有小孩嗎？</td></tr>
+  </table>
+
+  <div class="hint">
+    🎯 <b>形容詞要「性別一致」</b>：<br>
+    西班牙文的形容詞會隨名詞的性別變化。<br>
+    • <span class="es">Mi herman<b>o</b> es ingenier<b>o</b>.</span>（兄弟是男工程師）<br>
+    • <span class="es">Mi herman<b>a</b> es ingenier<b>a</b>.</span>（姐妹是女工程師）<br>
+    • <span class="es">Estoy casad<b>o</b>.</span>（男性說）/ <span class="es">Estoy casad<b>a</b>.</span>（女性說）
+  </div>
+</div>
+
+<!-- ==================== PAGE 5 ==================== -->
+<div class="page">
+  <h1>📘 第四步：文法精華——ser vs estar</h1>
+  <p>這是西班牙文最經典也最讓初學者頭痛的文法法點。兩個字都翻成「是」，但用法完全不同！</p>
+
+  <div class="grammar-box">
+    <h3>📌 ser = 本質、永久、身分特質</h3>
+    <p>用於描述「你是什麼」——不會輕易改變的屬性。</p>
+    <table>
+      <tr><th>類別</th><th>例句</th><th>中文</th></tr>
+      <tr><td>身分 / 職業</td><td><span class="es">Soy ingeniero.</span></td><td>我是工程師。</td></tr>
+      <tr><td>國籍</td><td><span class="es">Soy taiwanés.</span></td><td>我是台灣人。</td></tr>
+      <tr><td>性別</td><td><span class="es">Soy hombre / mujer.</span></td><td>我是男性／女性。</td></tr>
+      <tr><td>物理特徵</td><td><span class="es">Soy alto.</span></td><td>我長得高。</td></tr>
+      <tr><td>時間 / 日期</td><td><span class="es">Hoy es lunes.</span></td><td>今天是星期一。</td></tr>
+      <tr><td>事件地點</td><td><span class="es">La fiesta es en mi casa.</span></td><td>派對在我家辦。</td></tr>
+      <tr><td>人際關係</td><td><span class="es">Carlos es mi hermano.</span></td><td>Carlos 是我兄弟。</td></tr>
+      <tr><td>物質／材料</td><td><span class="es">La mesa es de madera.</span></td><td>桌子是木頭做的。</td></tr>
+    </table>
+  </div>
+
+  <div class="grammar-box">
+    <h3>📌 estar = 狀態、暫時、位置感受</h3>
+    <p>用於描述「你在哪裡、狀態如何」——可以改變的狀態。</p>
+    <table>
+      <tr><th>類別</th><th>例句</th><th>中文</th></tr>
+      <tr><td>地理位置</td><td><span class="es">Estoy en México.</span></td><td>我在墨西哥。</td></tr>
+      <tr><td>臨時狀態</td><td><span class="es">Estoy cansado.</span></td><td>我很累。（現階段）</td></tr>
+      <tr><td>情緒感受</td><td><span class="es">Estoy feliz.</span></td><td>我很開心。</td></tr>
+      <tr><td>健康狀況</td><td><span class="es">¿Cómo estás?</span></td><td>你好嗎？</td></tr>
+      <tr><td>某物在某處</td><td><span class="es">El libro está en la mesa.</span></td><td>書在桌上。</td></tr>
+      <tr><td>進行式（現在進行）</td><td><span class="es">Estoy trabajando.</span></td><td>我正在工作。</td></tr>
+      <tr><td>婚姻狀態</td><td><span class="es">Estoy casado.</span></td><td>我結婚了。（狀態）</td></tr>
+    </table>
+  </div>
+
+  <div class="tip">
+    💡 <b>ser vs estar 的口訣</b>：<br>
+    • <b>DOCTOR</b> 用 <b>ser</b>：<b>D</b>escription（描述）、<b>O</b>ccupation（職業）、<b>C</b>haracteristic（特質）、<b>T</b>ime（時間）、<b>O</b>rigin（來源）、<b>R</b>elationship（關係）<br>
+    • <b>PLACE</b> 用 <b>estar</b>：<b>P</b>osition（位置）、<b>L</b>ocation（地點）、<b>A</b>ction（進行動作）、<b>C</b>ondition（狀態）、<b>E</b>motion（情緒）
+  </div>
+
+  <h2>⚡ 生死攸關的差別</h2>
+  <table>
+    <tr><th>西班牙文</th><th>中文</th><th>說明</th></tr>
+    <tr><td><span class="es">Soy aburrido.</span></td><td>我是個無聊的人。</td><td>本性如此（用 ser）</td></tr>
+    <tr><td><span class="es">Estoy aburrido.</span></td><td>我覺得很無聊。</td><td>暫時狀態（用 estar）</td></tr>
+    <tr><td><span class="es">Ella es lista.</span></td><td>她很聰明。</td><td>本性聰明（用 ser）</td></tr>
+    <tr><td><span class="es">Ella está lista.</span></td><td>她準備好了。</td><td>暫時準備好（用 estar）</td></tr>
+    <tr><td><span class="es">Él es verde.</span></td><td>他是綠色的。（elike綠巨人？）</td><td>本質顏色（用 ser）</td></tr>
+    <tr><td><span class="es">Él está verde.</span></td><td>他是新手／沒經驗。</td><td>狀態：青澀（用 estar）</td></tr>
+  </table>
+
+  <div class="warn">
+    ⚠️ <b>特別注意</b>：「死亡」在西班牙文用 <span class="es">estar muerto</span>（ estar + 過去分詞），不是 ser！因為死亡被視為一種狀態。<br>
+    例：<span class="es">El perro está muerto.</span> → 那隻狗死了。
+  </div>
+</div>
+
+<!-- ==================== PAGE 6 ==================== -->
+<div class="page">
+  <h1>💬 對話練習 1 — 正式版（辦公室、商務場合）</h1>
+
+  <div class="dialogue">
+    <p><span class="sp">Nelson:</span> <span class="es">Buenos días. Permítame presentarme. Mi nombre es Nelson Liu, y soy ingeniero taiwanés.</span></p>
+    <p class="cn">→ 早安。請容許我自我介紹。我叫 Nelson Liu，是台灣工程師。</p>
+    <br>
+    <p><span class="sp">Gerente:</span> <span class="es">Mucho gusto, señor Liu. Yo soy el gerente de esta planta. ¿En qué área trabaja usted?</span></p>
+    <p class="cn">→ 幸會，Liu 先生。我是這間工廠的經理。您在哪個領域工作呢？</p>
+    <br>
+    <p><span class="sp">Nelson:</span> <span class="es">Trabajo en el departamento de tecnología, en la división de manufactura. Mi especialidad es la automatización industrial.</span></p>
+    <p class="cn">→ 我在科技部門的製造分部工作。我的專長是工業自動化。</p>
+    <br>
+    <p><span class="sp">Gerente:</span> <span class="es">¡Excelente! ¿Su familia está aquí en México, o viven en Taiwán?</span></p>
+    <p class="cn">→ 太棒了！您的家人在墨西哥這裡，還是住在台灣？</p>
+    <br>
+    <p><span class="sp">Nelson:</span> <span class="es">Mi esposa y mi hijo están aquí conmigo. Mis padres y mis hermanos viven en Taipéi.</span></p>
+    <p class="cn">→ 我太太和兒子跟我一起來了。我的父母和兄弟姐妹住在台北。</p>
+    <br>
+    <p><span class="sp">Gerente:</span> <span class="es">Entiendo. ¿Hace cuánto tiempo que está en México?</span></p>
+    <p class="cn">→ 了解。您來墨西哥多久了？</p>
+    <br>
+    <p><span class="sp">Nelson:</span> <span class="es">Llevo dos meses aquí. Estoy aprendiendo español para comunicarme mejor.</span></p>
+    <p class="cn">→ 我來了兩個月。我正在學西班牙文以便更好地溝通。</p>
+    <br>
+    <p><span class="sp">Gerente:</span> <span class="es">¡Muy bien! Si necesita algo, mi oficina está en el tercer piso.</span></p>
+    <p class="cn">→ 很好！如果您需要任何協助，我的辦公室在三樓。</p>
+  </div>
+
+  <h2>本對話新詞彙</h2>
+  <table>
+    <tr><th>西班牙文</th><th>中文</th><th>正式度</th><th>用法</th></tr>
+    <tr><td><span class="es">¿En qué área trabaja usted?</span></td><td>您在哪個領域工作？</td><td class="f-form">Formal</td><td>正式問職業</td></tr>
+    <tr><td><span class="es">departamento</span></td><td>部門</td><td class="f-neut">Neutral</td><td>辦公室部門</td></tr>
+    <tr><td><span class="es">división</span></td><td>分部</td><td class="f-neut">Neutral</td><td>公司內單位</td></tr>
+    <tr><td><span class="es">mi especialidad es...</span></td><td>我的專長是...</td><td class="f-form">Formal</td><td>自我介紹用</td></tr>
+    <tr><td><span class="es">¿Hace cuánto tiempo...?</span></td><td>多久...了？</td><td class="f-neut">Neutral</td><td>問時間長度</td></tr>
+    <tr><td><span class="es">Llevo... aquí.</span></td><td>我在這裡已經...</td><td class="f-neut">Neutral</td><td>說明待多久</td></tr>
+  </table>
+</div>
+
+<!-- ==================== PAGE 7 ==================== -->
+<div class="page">
+  <h1>💬 對話練習 2 — 墨西哥口語版（朋友聚會）</h1>
+
+  <div class="dialogue">
+    <p><span class="sp">Carlos:</span> <span class="es">¡Órale, compa! ¿Tú eres el nuevo del trabajo, verdad? ¿De dónde eres?</span></p>
+    <p class="cn">→ 嘿兄弟！你就是新來的同事對吧？你從哪裡來的？</p>
+    <br>
+    <p><span class="sp">Nelson:</span> <span class="es">Soy de Taiwán. ¿Y tú, eres de aquí, de Monterrey?</span></p>
+    <p class="cn">→ 我從台灣來。你呢，你是這裡人，蒙特雷的？</p>
+    <br>
+    <p><span class="sp">Carlos:</span> <span class="es">Sí, soy regio de toda la vida. ¿A qué te dedicas, <span class="es-red">güey</span>?</span></p>
+    <p class="cn">→ 對啊，我土生土長的 regio（蒙特雷人）。你做什麼的，哥們？</p>
+    <br>
+    <p><span class="sp">Nelson:</span> <span class="es">Soy ingeniero en una <span class="es-red">fábrica</span> de tecnología. Y tú, ¿qué <span class="es-red">chamba</span> tienes?</span></p>
+    <p class="cn">→ 我是科技工廠的工程師。你呢，你做什麼工作？</p>
+    <br>
+    <p><span class="sp">Carlos:</span> <span class="es">Yo soy técnico en mantenimiento. <span class="es-red">No es la gran cosa</span>, pero paga las cuentas.</span></p>
+    <p class="cn">→ 我是維修技術員。沒什麼了不起啦，但養得活自己。</p>
+    <br>
+    <p><span class="sp">Nelson:</span> <span class="es">¿Tienes familia aquí?</span></p>
+    <p class="cn">→ 你在這邊有家人嗎？</p>
+    <br>
+    <p><span class="sp">Carlos:</span> <span class="es">Sí, <span class="es-red">tengo un chorro</span> de familia. Mi <span class="es-red">carnal</span>, mi <span class="es-red">esposa</span>, y tres <span class="es-red">chamacos</span>. ¿Y tú?</span></p>
+    <p class="cn">→ 有啊，我有一大家子。我兄弟、我老婆，還有三個小鬼頭。你呢？</p>
+    <br>
+    <p><span class="sp">Nelson:</span> <span class="es">Soy <span class="es-red">casado</span>, tengo un hijo. Mi esposa e hijo están aquí conmigo.</span></p>
+    <p class="cn">→ 我結婚了，有一個兒子。我老婆和兒子都在這邊。</p>
+    <br>
+    <p><span class="sp">Carlos:</span> <span class="es">¡<span class="es-red">Qué padre</span>! Oye, el sábado hay <span class="es-red">carne asada</span> en mi casa. ¿<span class="es-red">Te caes</span>?</span></p>
+    <p class="cn">→ 太棒了！哎，星期六我家有烤肉趴。你來嗎？</p>
+    <br>
+    <p><span class="sp">Nelson:</span> <span class="es">¡<span class="es-red">Sale pues</span>! <span class="es-red">No hay pedo</span>. ¿A qué hora?</span></p>
+    <p class="cn">→ 好啊！沒問題。幾點開始？</p>
+    <br>
+    <p><span class="sp">Carlos:</span> <span class="es">Como a las seis. Pues ya sabes, <span class="es-red">a la hora mexicana</span>.</span></p>
+    <p class="cn">→ 大概六點。你知道的啦，墨西哥時間。</p>
+  </div>
+
+  <h2>🔥 本對話墨西哥俚語解析</h2>
+  <table>
+    <tr><th>墨西哥用語</th><th>中文</th><th>正式度</th><th>說明</th></tr>
+    <tr><td><span class="es">güey</span></td><td>哥們 / 傢伙</td><td class="f-slan">Slang</td><td>僅限朋友間，正式場合絕對禁用</td></tr>
+    <tr><td><span class="es">compa</span></td><td>兄弟 / 老兄</td><td class="f-colo">Coloquial</td><td>compadre 的縮寫，友好稱呼</td></tr>
+    <tr><td><span class="es">regio</span></td><td>蒙特雷人</td><td class="f-neut">Neutral</td><td>來自 Nuevo León（蒙特雷所在州）</td></tr>
+    <tr><td><span class="es">chamba</span></td><td>工作</td><td class="f-slan">Slang</td><td>比 trabajo 更口語常用</td></tr>
+    <tr><td><span class="es">No es la gran cosa</span></td><td>沒什麼了不起</td><td class="f-colo">Coloquial</td><td>謙虛說法</td></tr>
+    <tr><td><span class="es">un chorro de...</span></td><td>一大群 / 很多</td><td class="f-colo">Coloquial</td><td>上課學過，chorro = 瀑布</td></tr>
+    <tr><td><span class="es">carnal</span></td><td>兄弟 / 哥們</td><td class="f-colo">Coloquial</td><td>carnal = 血肉親情，對摯友用</td></tr>
+    <tr><td><span class="es">chamacos</span></td><td>小孩 / 小鬼</td><td class="f-colo">Coloquial</td><td>chamaco/a（小孩，略帶調侃）</td></tr>
+    <tr><td><span class="es">Qué padre</span></td><td>太棒了 / 酷斃了</td><td class="f-colo">Coloquial</td><td>padre = 爸，但這裡是「棒」</td></tr>
+    <tr><td><span class="es">carne asada</span></td><td>烤肉</td><td class="f-neut">Neutral</td><td>墨西哥週末聚會核心活動！</td></tr>
+    <tr><td><span class="es">¿Te caes?</span></td><td>你來嗎？（隨意）</td><td class="f-slan">Slang</td><td>來自 caerse（掉下來），mer=來玩</td></tr>
+    <tr><td><span class="es">Sale pues</span></td><td>好啊 / 就這樣</td><td class="f-colo">Coloquial</td><td>已學過，sale 的加強版</td></tr>
+    <tr><td><span class="es">No hay pedo</span></td><td>沒問題 / 沒事</td><td class="f-slan">Slang</td><td>字面帶「屁」字，已普遍化</td></tr>
+    <tr><td><span class="es">a la hora mexicana</span></td><td>墨西哥時間（遲到）</td><td class="f-colo">Coloquial</td><td>已學過，再複習一次！</td></tr>
+  </table>
+
+  <div class="warn">
+    ⚠️ <b>這一課的「內用俚語」</b>：<span class="es">No hay pedo</span> 雖然字面上跟「pedo」（屁）有關，但在墨西哥已普遍化成「沒問題」。<b>但是</b>——在長輩或正式場合避免使用！改說 <span class="es">No hay problema</span> 或 <span class="es">Todo bien</span>。
+  </div>
+</div>
+
+<!-- ==================== PAGE 8 ==================== -->
+<div class="page">
+  <h1>✏️ 小測驗（五題）</h1>
+
+  <div class="exercise">
+    <div class="q">題目 1：國籍填空（請填入正確的 ser 或 estar）</div>
+    <p>a) Mi hermano __________ médico.（我兄弟是醫生）<span class="blank"></span></p>
+    <p>b) Mi esposa __________ en casa ahora.（我老婆現在在家）<span class="blank"></span></p>
+    <p>c) Nosotros __________ de Taiwán.（我們來自台灣）<span class="blank"></span></p>
+    <p>d) Hoy __________ miércoles.（今天星期三）<span class="blank"></span></p>
+    <p>e) El bebé __________ dormido.（寶寶睡著了）<span class="blank"></span></p>
+    <br>
+
+    <div class="q">題目 2：職業造句</div>
+    <p>請用 <span class="es">Soy...</span> / <span class="es">Trabajo en...</span> / <span class="es">Me dedico a...</span> 任選一句型，寫出以下職業：</p>
+    <p>a) 你是老師：<span class="blank" style="min-width:10cm;"></span></p>
+    <p>b) 他在科技公司工作：<span class="blank" style="min-width:10cm;"></span></p>
+    <p>c) 我的工作是會計：<span class="blank" style="min-width:10cm;"></span></p>
+    <br>
+
+    <div class="q">題目 3：家庭詞彙對照</div>
+    <p>請寫出西班牙文：</p>
+    <p>a) 我沒有兄弟：<span class="blank" style="min-width:10cm;"></span></p>
+    <p>b) 我父母住在墨西哥：<span class="blank" style="min-width:10cm;"></span></p>
+    <p>c) 你結婚了嗎？：<span class="blank" style="min-width:10cm;"></span></p>
+    <br>
+
+    <div class="q">題目 4：情景翻譯</div>
+    <p>你是台灣工程師，剛到墨西哥兩個月，太太和兒子也在這邊。請用<span class="es">正式版</span>西班牙文完成這段自我介紹：</p>
+    <p><span class="blank" style="min-width:14cm; min-height:2cm;"></span></p>
+    <br>
+
+    <div class="q">題目 5：ser / estar 改錯</div>
+    <p>以下句子若用錯了 ser/estar，請修正：</p>
+    <p>a) Estoy ingeniero.（錯誤）→ <span class="blank" style="min-width:10cm;"></span></p>
+    <p>b) Soy en México.（錯誤）→ <span class="blank" style="min-width:10cm;"></span></p>
+    <p>c) Estoy de Taiwán.（錯誤）→ <span class="blank" style="min-width:10cm;"></span></p>
+  </div>
+</div>
+
+<!-- ==================== PAGE 9 ==================== -->
+<div class="page">
+  <h1>📝 進階練習</h1>
+
+  <div class="exercise">
+    <div class="q">題目 6：ser vs estar 情境填空（新句子）</div>
+    <p>請根據情境填入 ser 的正確變位（soy/eres/es/somos/son）或 estar（estoy/estás/está/estamos/están）：</p>
+    <p>a) Mi abuela __________ enferma hoy. No puede venir a la fiesta.<span class="blank" style="min-width:6cm;"></span></p>
+    <p>b) Los tacos de aquí __________ muy ricos. ¡El mejor de la ciudad!<span class="blank" style="min-width:6cm;"></span></p>
+    <p>c) ¿Dónde __________ el baño?（正式問法）<span class="blank" style="min-width:6cm;"></span></p>
+    <p>d) Nosotros __________ muy contentos con tu visita.<span class="blank" style="min-width:6cm;"></span></p>
+    <p>e) La reunión __________ en la sala de juntas a las tres.<span class="blank" style="min-width:6cm;"></span></p>
+    <p>f) Tú __________ un buen amigo. Siempre me ayudas.<span class="blank" style="min-width:6cm;"></span></p>
+    <br>
+
+    <div class="q">題目 7：國籍詞性變化</div>
+    <p>請根據括號中的性別提示，寫出正確的國籍形容詞：</p>
+    <p>a) 她是日本人（女）：Ella es __________.<span class="blank" style="min-width:8cm;"></span></p>
+    <p>b) 他是法國人（男）：Él es __________.<span class="blank" style="min-width:8cm;"></span></p>
+    <p>c) 我們是加拿大人（混和/不分）：Nosotros somos __________.<span class="blank" style="min-width:8cm;"></span></p>
+    <p>d) 那位女士是西班牙人：Esa señora es __________.<span class="blank" style="min-width:8cm;"></span></p>
+    <p>e) 我的客戶是德國人（男）：Mi cliente es __________.<span class="blank" style="min-width:8cm;"></span></p>
+    <br>
+
+    <div class="q">題目 8：職業 + 國籍 + 地點 綜合造句</div>
+    <p>請用一句完整的西班牙文描述以下人物（包含職業、國籍、現在在哪裡）：</p>
+    <p>a) 你是一位台灣工程師，現在在墨西哥工作。<span class="blank" style="min-width:12cm;"></span></p>
+    <p>b) 她是墨西哥護士，現在在醫院裡。<span class="blank" style="min-width:12cm;"></span></p>
+    <p>c) 我的老師是西班牙人，現在在台灣教書。<span class="blank" style="min-width:12cm;"></span></p>
+    <br>
+
+    <div class="q">題目 9：家庭關係推理</div>
+    <p>請用西班牙文寫出這個人是你的誰：</p>
+    <p>a) 我爸爸的妈妈 = __________<span class="blank" style="min-width:6cm;"></span></p>
+    <p>b) 我妈妈的兄弟 = __________<span class="blank" style="min-width:6cm;"></span></p>
+    <p>c) 我妻子的爸爸 = __________<span class="blank" style="min-width:6cm;"></span></p>
+    <p>d) 我兄弟的儿子 = __________<span class="blank" style="min-width:6cm;"></span></p>
+    <br>
+
+    <div class="q">題目 10：正式 ↔ 口語 轉換</div>
+    <p>請把以下正式說法改成墨西哥口語版（可用俚語！）：</p>
+    <p>a) 正式：No tengo problema. → 口語：<span class="blank" style="min-width:8cm;"></span></p>
+    <p>b) 正式：Mi trabajo es ingeniero. → 口語：<span class="blank" style="min-width:8cm;"></span></p>
+    <p>c) 正式：Mi hermano pequeño está durmiendo. → 口語：<span class="blank" style="min-width:8cm;"></span></p>
+  </div>
+</div>
+
+<!-- ==================== PAGE 10 ==================== -->
+<div class="page">
+  <h1>📝 本課作業與參考答案</h1>
+
+  <div class="exercise">
+    <div class="q">作業 1：自我介紹升級版（口語版與正式版各一個）</div>
+    <p>請用本課所學，寫出一段完整的自我介紹，包含：</p>
+    <ul>
+      <li>名字</li>
+      <li>國籍</li>
+      <li>職業（可以寫你現在的工作，或假設的）</li>
+      <li>家庭狀況（有無配偶、小孩、父母在哪裡）</li>
+    </ul>
+    <p>→ 正式版（適合公司面試或認識長輩）：</p>
+    <p><span class="blank" style="min-width:14cm;"></span></p>
+    <p>→ 口語版（適合跟朋友聊天）：</p>
+    <p><span class="blank" style="min-width:14cm;"></span></p>
+    <br>
+
+    <div class="q">作業 2：畫出你的家庭樹</div>
+    <p>請畫出你的家庭樹（family tree），並在每個成員旁邊寫上西班牙文稱呼：</p>
+    <p>例：Abuelo（爺爺）→ 名字 → 他的職業（西班牙文）</p>
+    <p><span class="blank" style="min-width:14cm; min-height:3cm;"></span></p>
+    <br>
+
+    <div class="q">作業 3：ser vs estar 造句挑戰</div>
+    <p>請用同一個形容詞，分別搭配 ser 和 estar 造句，並寫出中文意思：</p>
+    <p>例：listo → <span class="es">Soy listo.</span>（我很聰明。）/ <span class="es">Estoy listo.</span>（我準備好了。）</p>
+    <p>a) aburrido：_______________________ / _______________________</p>
+    <p>b) verde：_______________________ / _______________________</p>
+    <p>c) 自選一個：_______________________ / _______________________</p>
+  </div>
+
+  <h2 style="margin-top:1cm; font-size:12pt; color:var(--mex-green); border:none;">📖 參考答案（做完練習再偷看！）</h2>
+  <div style="font-size:9.5pt; color:#666; line-height:1.6; background:#f9f9f9; padding:10px 14px; border-radius:6px;">
+    <b>小測驗（Page 8）</b><br>
+    題1：a) es / b) está / c) somos / d) es / e) está<br>
+    題5：Soy ingeniero / Estoy en México / Soy de Taiwán<br><br>
+    <b>進階練習（Page 9）</b><br>
+    題6：a) está（暫時生病）b) son（本質好吃）c) está（物品位置）d) estamos（情緒）e) es（事件安排）f) eres（本質好人）<br>
+    題7：a) japonesa / b) francés / c) canadienses / d) española / e) alemán<br>
+    題8：a) Soy ingeniero taiwanés y trabajo en México. / b) Ella es enfermera mexicana y está en el hospital. / c) Mi maestro es español y está enseñando en Taiwán.<br>
+    題9：a) abuela / b) tío materno / c) suegro / d) sobrino<br>
+    題10：a) No hay pedo / b) Mi chamba es ingeniero / c) Mi chamaco está dormido<br><br>
+    💡 <b>題目 3c 小討論</b>：「結婚」可用 <span class="es">ser casado</span>（身分）或 <span class="es">estar casado</span>（狀態），兩個都對！
+  </div>
+
+  <div class="next-lesson">
+    <div class="label">下一課預告</div>
+    <div style="font-size:13pt; margin:0.3cm 0;">
+      第 4 課：描述外表與個性<br>
+      <span style="font-size:11pt; color:#555;">Lección 4: Descripción Física y Personalidad</span>
+    </div>
+    <div style="font-size:10pt; color:#555;">
+      學完本課後，你將能夠描述自己和他人的長相、身高、個性，<br>
+      並在墨西哥夜店裡認出那個「fresa」或「naco」！🔥（開玩笑的啦）
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
