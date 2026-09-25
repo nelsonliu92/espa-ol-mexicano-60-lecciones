@@ -19,8 +19,8 @@
 | 001 | 基本問候與自我介紹 | Saludos y Presentaciones |
 | 002 | 數字、時間與基本詞彙 | Números, Hora y Vocabulario Básico |
 | 003 | 國籍、職業與家庭 | Nacionalidad, Profesión y Familia |
-| 004 | 常用動詞（現在式）| Verbos Comunes en Presente |
-| 005 | 疑問詞與基本句型 | Preguntas y Estructuras Básicas |
+| 004 | 描述外表與個性 | Descripción Física y Personalidad |
+| 005 | 常用動詞（現在式）| Verbos Comunes en Presente |
 
 ### 第 2 週：日常互動
 

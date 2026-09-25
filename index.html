@@ -218,15 +218,15 @@
 <section class="max-w-4xl mx-auto px-6 pb-5">
   <div class="grid grid-cols-3 gap-4">
     <div class="stat-card bg-white rounded-xl p-4 text-center shadow-sm border border-gray-100">
-      <div class="text-2xl font-extrabold" style="color:var(--mex-green)">5</div>
+      <div class="text-2xl font-extrabold" style="color:var(--mex-green)">10</div>
       <div class="text-xs text-gray-500 font-medium mt-1">已完成課程</div>
     </div>
     <div class="stat-card bg-white rounded-xl p-4 text-center shadow-sm border border-gray-100">
-      <div class="text-2xl font-extrabold" style="color:var(--mex-gold)">62</div>
+      <div class="text-2xl font-extrabold" style="color:var(--mex-gold)">114+</div>
       <div class="text-xs text-gray-500 font-medium mt-1">已學俚語</div>
     </div>
     <div class="stat-card bg-white rounded-xl p-4 text-center shadow-sm border border-gray-100">
-      <div class="text-2xl font-extrabold" style="color:var(--mex-red)">55</div>
+      <div class="text-2xl font-extrabold" style="color:var(--mex-red)">50</div>
       <div class="text-xs text-gray-500 font-medium mt-1">剩餘課程</div>
     </div>
   </div>
@@ -240,12 +240,12 @@
         <span>📊</span> 學習進度
       </span>
       <span class="text-sm text-gray-500 font-medium">
-        目前完成 <span id="progress-text" class="font-bold text-green-700">5 / 60</span> 課
-        · <span id="progress-percent" class="font-bold">8.3</span>%
+        目前完成 <span id="progress-text" class="font-bold text-green-700">10 / 60</span> 課
+        · <span id="progress-percent" class="font-bold">16.7</span>%
       </span>
     </div>
     <div class="w-full bg-gray-100 rounded-full h-3.5 overflow-hidden relative">
-      <div id="progress-bar" class="h-3.5 rounded-full transition-all duration-1000 ease-out relative" style="width:8.3%; background:linear-gradient(90deg, #006341, #F4B400, #CE1126)">
+      <div id="progress-bar" class="h-3.5 rounded-full transition-all duration-1000 ease-out relative" style="width:16.7%; background:linear-gradient(90deg, #006341, #F4B400, #CE1126)">
         <div class="absolute inset-0 rounded-full" style="background:linear-gradient(90deg,transparent 0%,rgba(255,255,255,0.35) 50%,transparent 100%); animation:shimmer 2s infinite;"></div>
       </div>
     </div>
@@ -399,35 +399,66 @@
   </div>
 </div>
 
-<!-- Week 2 (preview only) -->
+<!-- Week 2 -->
 <div class="week-section">
   <div class="week-title">📅 第 2 週：日常互動</div>
 
-  <div class="lesson-card in-progress block bg-white rounded-xl shadow-sm border-2 border-yellow-300 p-6 mb-3 relative">
-    <div class="absolute top-3 right-3 text-xs font-bold px-2 py-1 rounded text-yellow-700 bg-yellow-100">下一課</div>
-    <div class="flex items-start gap-5 relative">
-      <div class="num-circle text-white shrink-0 shadow-md" style="background:linear-gradient(135deg,#F4B400,#d4a017)">06</div>
-      <div class="flex-1 min-w-0">
-        <div class="flex items-center gap-2 mb-1 flex-wrap">
-          <span class="badge badge-active">🔜 即將開始</span>
-        </div>
-        <h2 class="text-lg font-bold text-gray-800 mb-1">天氣與日期</h2>
-        <p class="text-sm text-gray-500 font-medium">El Tiempo y las Fechas</p>
-        <div class="flex items-center gap-3 mt-3 text-xs text-gray-400 flex-wrap">
-          <span>🌦️ 天氣表達</span><span>📅 日期格式</span><span>🎉 墨西哥節日</span>
-        </div>
+  <!-- 006 -->
+  <div class="lesson-card completed block bg-white rounded-xl shadow-sm border border-gray-100 p-6 mb-3">
+    <div class="flex items-start gap-5">
+      <a href="./lessons/lesson6_weather_dates.html" target="_blank" class="num-circle text-white shrink-0 shadow-md no-underline" style="background:linear-gradient(135deg,#006341,#2a9d6a);display:flex;align-items:center;justify-content:center;">06</a>
+      <div class="flex-1 min-w-0" style="cursor:pointer" onclick="window.open('./lessons/lesson6_weather_dates.html','_blank');celebrate(event);">
+        <div class="flex items-center gap-2 mb-1 flex-wrap"><span class="badge badge-done">✅ 已完成</span><span class="text-xs text-gray-400">2026-09-25</span></div>
+        <h2 class="text-lg font-bold text-gray-800 mb-1">天氣與日期</h2><p class="text-sm text-gray-500 font-medium">El Tiempo y las Fechas</p>
+        <div class="flex items-center gap-3 mt-3 text-xs text-gray-400 flex-wrap"><span>🌦️ 天氣表達</span><span>📅 日期格式</span><span>🔥 10+ 墨西哥用語</span></div>
       </div>
-      <div class="hidden sm:flex items-center text-gray-300 text-2xl">○</div>
     </div>
   </div>
 
-  <div class="lesson-card locked block bg-gray-50 rounded-xl shadow-sm border border-gray-100 p-6 mb-3 opacity-65">
+  <!-- 007 -->
+  <div class="lesson-card completed block bg-white rounded-xl shadow-sm border border-gray-100 p-6 mb-3">
     <div class="flex items-start gap-5">
-      <div class="num-circle text-gray-400 bg-gray-200 shrink-0">07</div>
-      <div class="flex-1 min-w-0">
-        <span class="badge badge-next">🔒 待解鎖</span>
-        <h2 class="text-lg font-bold text-gray-400 mt-1 mb-1">顏色、尺寸與形容</h2>
-        <p class="text-sm text-gray-400 font-medium">Colores, Tamaños y Descripciones</p>
+      <a href="./lessons/lesson7_colors_sizes.html" target="_blank" class="num-circle text-white shrink-0 shadow-md no-underline" style="background:linear-gradient(135deg,#006341,#2a9d6a);display:flex;align-items:center;justify-content:center;">07</a>
+      <div class="flex-1 min-w-0" style="cursor:pointer" onclick="window.open('./lessons/lesson7_colors_sizes.html','_blank');celebrate(event);">
+        <div class="flex items-center gap-2 mb-1 flex-wrap"><span class="badge badge-done">✅ 已完成</span><span class="text-xs text-gray-400">2026-09-25</span></div>
+        <h2 class="text-lg font-bold text-gray-800 mb-1">顏色、尺寸與形容</h2><p class="text-sm text-gray-500 font-medium">Colores, Tamaños y Descripciones</p>
+        <div class="flex items-center gap-3 mt-3 text-xs text-gray-400 flex-wrap"><span>🎨 顏色</span><span>📏 尺寸</span><span>🔥 10+ 墨西哥用語</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 008 -->
+  <div class="lesson-card completed block bg-white rounded-xl shadow-sm border border-gray-100 p-6 mb-3">
+    <div class="flex items-start gap-5">
+      <a href="./lessons/lesson8_likes.html" target="_blank" class="num-circle text-white shrink-0 shadow-md no-underline" style="background:linear-gradient(135deg,#006341,#2a9d6a);display:flex;align-items:center;justify-content:center;">08</a>
+      <div class="flex-1 min-w-0" style="cursor:pointer" onclick="window.open('./lessons/lesson8_likes.html','_blank');celebrate(event);">
+        <div class="flex items-center gap-2 mb-1 flex-wrap"><span class="badge badge-done">✅ 已完成</span><span class="text-xs text-gray-400">2026-09-25</span></div>
+        <h2 class="text-lg font-bold text-gray-800 mb-1">喜好與不喜歡</h2><p class="text-sm text-gray-500 font-medium">Gustos y Preferencias</p>
+        <div class="flex items-center gap-3 mt-3 text-xs text-gray-400 flex-wrap"><span>❤️ gustar</span><span>⚖️ preferir</span><span>🔥 10+ 墨西哥用語</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 009 -->
+  <div class="lesson-card completed block bg-white rounded-xl shadow-sm border border-gray-100 p-6 mb-3">
+    <div class="flex items-start gap-5">
+      <a href="./lessons/lesson9_daily_activities.html" target="_blank" class="num-circle text-white shrink-0 shadow-md no-underline" style="background:linear-gradient(135deg,#006341,#2a9d6a);display:flex;align-items:center;justify-content:center;">09</a>
+      <div class="flex-1 min-w-0" style="cursor:pointer" onclick="window.open('./lessons/lesson9_daily_activities.html','_blank');celebrate(event);">
+        <div class="flex items-center gap-2 mb-1 flex-wrap"><span class="badge badge-done">✅ 已完成</span><span class="text-xs text-gray-400">2026-09-25</span></div>
+        <h2 class="text-lg font-bold text-gray-800 mb-1">日常活動</h2><p class="text-sm text-gray-500 font-medium">Actividades Diarias</p>
+        <div class="flex items-center gap-3 mt-3 text-xs text-gray-400 flex-wrap"><span>⏰ 日常作息</span><span>🔄 反身動詞</span><span>🔥 10+ 墨西哥用語</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 010 -->
+  <div class="lesson-card completed block bg-white rounded-xl shadow-sm border border-gray-100 p-6 mb-3">
+    <div class="flex items-start gap-5">
+      <a href="./lessons/lesson10_frequency_habits.html" target="_blank" class="num-circle text-white shrink-0 shadow-md no-underline" style="background:linear-gradient(135deg,#006341,#2a9d6a);display:flex;align-items:center;justify-content:center;">10</a>
+      <div class="flex-1 min-w-0" style="cursor:pointer" onclick="window.open('./lessons/lesson10_frequency_habits.html','_blank');celebrate(event);">
+        <div class="flex items-center gap-2 mb-1 flex-wrap"><span class="badge badge-done">✅ 已完成</span><span class="text-xs text-gray-400">2026-09-25</span></div>
+        <h2 class="text-lg font-bold text-gray-800 mb-1">頻率與習慣</h2><p class="text-sm text-gray-500 font-medium">Frecuencia y Hábitos</p>
+        <div class="flex items-center gap-3 mt-3 text-xs text-gray-400 flex-wrap"><span>🔁 頻率副詞</span><span>📘 習慣句型</span><span>🔥 12+ 墨西哥用語</span></div>
       </div>
     </div>
   </div>
@@ -445,21 +476,11 @@
 <!-- ============== HIDDEN FULL CURRICULUM ============== -->
 <section class="max-w-4xl mx-auto px-6 pb-8 hidden-weeks" id="all-weeks">
 
-<!-- Week 2 rest -->
-<div class="week-section">
-  <div class="week-title">📅 第 2 週：日常互動（續）</div>
-  <div class="grid gap-3">
-    <div class="lesson-card locked block bg-gray-50 rounded-xl shadow-sm border border-gray-100 p-6 opacity-65"><div class="flex items-start gap-5"><div class="num-circle text-gray-400 bg-gray-200 shrink-0">08</div><div class="flex-1"><span class="badge badge-next">🔒 待解鎖</span><h2 class="text-lg font-bold text-gray-400 mt-1 mb-1">喜好與不喜歡</h2><p class="text-sm text-gray-400 font-medium">Gustos y Preferencias</p></div></div></div>
-    <div class="lesson-card locked block bg-gray-50 rounded-xl shadow-sm border border-gray-100 p-6 opacity-65"><div class="flex items-start gap-5"><div class="num-circle text-gray-400 bg-gray-200 shrink-0">09</div><div class="flex-1"><span class="badge badge-next">🔒 待解鎖</span><h2 class="text-lg font-bold text-gray-400 mt-1 mb-1">日常活動</h2><p class="text-sm text-gray-400 font-medium">Actividades Diarias</p></div></div></div>
-    <div class="lesson-card locked block bg-gray-50 rounded-xl shadow-sm border border-gray-100 p-6 opacity-65"><div class="flex items-start gap-5"><div class="num-circle text-gray-400 bg-gray-200 shrink-0">10</div><div class="flex-1"><span class="badge badge-next">🔒 待解鎖</span><h2 class="text-lg font-bold text-gray-400 mt-1 mb-1">頻率與習慣</h2><p class="text-sm text-gray-400 font-medium">Frecuencia y Hábitos</p></div></div></div>
-  </div>
-</div>
-
 <!-- Week 3 -->
 <div class="week-section">
   <div class="week-title">📅 第 3 週：情感與表達</div>
   <div class="grid gap-3">
-    <div class="lesson-card locked block bg-gray-50 rounded-xl shadow-sm border border-gray-100 p-6 opacity-65"><div class="flex items-start gap-5"><div class="num-circle text-gray-400 bg-gray-200 shrink-0">11</div><div class="flex-1"><span class="badge badge-next">🔒 待解鎖</span><h2 class="text-lg font-bold text-gray-400 mt-1 mb-1">情緒表達</h2><p class="text-sm text-gray-400 font-medium">Expresar Emociones</p></div></div></div>
+    <div class="lesson-card in-progress block bg-white rounded-xl shadow-sm border-2 border-yellow-300 p-6 relative"><div class="absolute top-3 right-3 text-xs font-bold px-2 py-1 rounded text-yellow-700 bg-yellow-100">下一課</div><div class="flex items-start gap-5"><div class="num-circle text-white shrink-0 shadow-md" style="background:linear-gradient(135deg,#F4B400,#d4a017)">11</div><div class="flex-1"><span class="badge badge-active">🔜 即將開始</span><h2 class="text-lg font-bold text-gray-800 mt-1 mb-1">情緒表達</h2><p class="text-sm text-gray-500 font-medium">Expresar Emociones</p></div></div></div>
     <div class="lesson-card locked block bg-gray-50 rounded-xl shadow-sm border border-gray-100 p-6 opacity-65"><div class="flex items-start gap-5"><div class="num-circle text-gray-400 bg-gray-200 shrink-0">12</div><div class="flex-1"><span class="badge badge-next">🔒 待解鎖</span><h2 class="text-lg font-bold text-gray-400 mt-1 mb-1">讚美與鼓勵</h2><p class="text-sm text-gray-400 font-medium">Cumplidos y Ánimo</p></div></div></div>
     <div class="lesson-card locked block bg-gray-50 rounded-xl shadow-sm border border-gray-100 p-6 opacity-65"><div class="flex items-start gap-5"><div class="num-circle text-gray-400 bg-gray-200 shrink-0">13</div><div class="flex-1"><span class="badge badge-next">🔒 待解鎖</span><h2 class="text-lg font-bold text-gray-400 mt-1 mb-1">抱怨與道歉</h2><p class="text-sm text-gray-400 font-medium">Quejas y Disculpas</p></div></div></div>
     <div class="lesson-card locked block bg-gray-50 rounded-xl shadow-sm border border-gray-100 p-6 opacity-65"><div class="flex items-start gap-5"><div class="num-circle text-gray-400 bg-gray-200 shrink-0">14</div><div class="flex-1"><span class="badge badge-next">🔒 待解鎖</span><h2 class="text-lg font-bold text-gray-400 mt-1 mb-1">請求與幫助</h2><p class="text-sm text-gray-400 font-medium">Pedir Favores y Ayuda</p></div></div></div>
@@ -717,7 +738,7 @@ function toggleAllWeeks() {
 }
 
 // === Progress ===
-const completed = 5, total = 60;
+const completed = 10, total = 60;
 const percent = ((completed / total) * 100).toFixed(1);
 document.getElementById('progress-percent').textContent = percent;
 document.getElementById('nav-progress').textContent = `進度 ${completed}/${total} (+第0課)`;

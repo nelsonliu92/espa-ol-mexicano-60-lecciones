@@ -29,7 +29,12 @@ español-mexicano-60-lecciones/
     ├── lesson2_numbers.html
     ├── lesson3_nationality.html
     ├── lesson4_appearance.html
-    └── lesson5_verbs.html
+    ├── lesson5_verbs.html
+    ├── lesson6_weather_dates.html
+    ├── lesson7_colors_sizes.html
+    ├── lesson8_likes.html
+    ├── lesson9_daily_activities.html
+    └── lesson10_frequency_habits.html
 ```
 
 > 📄 **PDF 課本**：由 HTML 經 Chrome headless 列印產出（`--print-to-pdf`），檔案較大故不上傳 GitHub，建議本地自行產出。
@@ -40,8 +45,8 @@ español-mexicano-60-lecciones/
 
 | 項目 | 數量 |
 |------|------|
-| 已完成課程 | **5 / 60**課 |
-| 已學俚語 | **60+** 則 |
+| 已完成課程 | **10 / 60** 課（第 1～2 週完成） |
+| 已學俚語 | **114+** 則 |
 | 課程階段 | 基礎扎根期（Week 1–4）|
 
 ---
@@ -51,7 +56,11 @@ español-mexicano-60-lecciones/
 ### 在瀏覽器預覽
 直接開啟本倉庫中的 `index.html`，即可瀏覽互動式課程目錄：
 - 點擊課程卡片文字區 → 開啟 HTML 源始檔
-- 點擊點擊紅色「📄 PDF」鈕 → 開啟對應 PDF（需本地有 PDF 檔案）
+- 線上版直接點擊課程卡片即可閱讀 HTML 課本
+
+### GitHub Pages
+啟用 Pages 後可從以下網址閱讀：
+`https://nelsonliu92.github.io/espa-ol-mexicano-60-lecciones/`
 
 ### 產出 PDF
 若需本地產出 PDF，需安裝 Google Chrome，並執行：
