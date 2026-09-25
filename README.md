@@ -35,6 +35,7 @@ español-mexicano-60-lecciones/
     ├── lesson8_likes.html
     ├── lesson9_daily_activities.html
     └── lesson10_frequency_habits.html
+    ├── lesson11_emotions.html ～ lesson15_agreement_disagreement.html
 ```
 
 > 📄 **PDF 課本**：由 HTML 經 Chrome headless 列印產出（`--print-to-pdf`），檔案較大故不上傳 GitHub，建議本地自行產出。
@@ -45,8 +46,8 @@ español-mexicano-60-lecciones/
 
 | 項目 | 數量 |
 |------|------|
-| 已完成課程 | **10 / 60** 課（第 1～2 週完成） |
-| 已學俚語 | **114+** 則 |
+| 已完成課程 | **15 / 60** 課（第 1～3 週完成） |
+| 已學俚語 | **150+** 則 |
 | 課程階段 | 基礎扎根期（Week 1–4）|
 
 ---
