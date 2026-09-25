@@ -343,8 +343,17 @@ function celebrate(e) {
 function toggleWeek(index) {
   const panel = document.getElementById(`week-${index}`);
   const button = document.querySelector(`[aria-controls="week-${index}"]`);
-  const open = panel.classList.toggle('show');
-  button.setAttribute('aria-expanded', String(open));
+  const willOpen = !panel.classList.contains('show');
+
+  // 手風琴模式：先收合所有週別
+  document.querySelectorAll('.week-content.show').forEach(p => p.classList.remove('show'));
+  document.querySelectorAll('.week-toggle[aria-expanded="true"]').forEach(b => b.setAttribute('aria-expanded', 'false'));
+
+  // 原本是關閉的 → 展開這一週；原本是開啟的 → 維持全部收合（可全部折疊）
+  if (willOpen) {
+    panel.classList.add('show');
+    button.setAttribute('aria-expanded', 'true');
+  }
 }
 
 // === Progress ===
